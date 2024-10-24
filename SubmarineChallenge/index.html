@@ -3,8 +3,11 @@
     <head>
     </head>
     <body>
-        <input type="file" name="inputfile" id="inputfile" onchange="readFile(event)"/>
-        <p id="output"></p>
+        <!-- <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="files[]" multiple onchange="readFiles(event)" />
+            <button type="button" id="uploadButton">Upload Files</button>
+        </form> -->
+        <input type="file" multiple onchange="readFiles(event)"/>
         <script src="./index.js"></script>
     </body>
 </html>
